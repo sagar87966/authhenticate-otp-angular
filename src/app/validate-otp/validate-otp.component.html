@@ -1,0 +1,96 @@
+<mat-card>
+  <div class="prompt">
+    <strong>Enter verification code</strong>
+    <p>Please enter the 6-digit verification code sent to</p>
+    <p>
+      <strong>mark@skyholding.dk.</strong> It might take up to 5 min. to
+      <br />receive the email.
+    </p>
+    <span>Didn’t receive a code? <a (click)="sendAgain()">Send again</a></span>
+  </div>
+  <form
+    class="digit-group"
+    autocomplete="false"
+    (ngSubmit)="onSubmit()"
+    [formGroup]="form"
+  >
+    <input
+      type="text"
+      appRestrictPaste
+      id="input1"
+      name="input1"
+      #formRow
+      formControlName="input1"
+      autocomplete="off"
+      class="form-control"
+      maxlength="1"
+      (keyup)="keyUpEvent($event, 0)"
+    />
+    <input
+      type="text"
+      appRestrictPaste
+      id="input2"
+      name="input2"
+      #formRow
+      formControlName="input2"
+      class="form-control"
+      maxlength="1"
+      (keyup)="keyUpEvent($event, 1)"
+    />
+    <input
+      type="text"
+      appRestrictPaste
+      id="input3"
+      name="input3"
+      #formRow
+      formControlName="input3"
+      class="form-control"
+      maxlength="1"
+      (keyup)="keyUpEvent($event, 2)"
+    />
+    <span class="splitter">&ndash;</span>
+    <input
+      type="text"
+      appRestrictPaste
+      id="input4"
+      name="input4"
+      #formRow
+      formControlName="input4"
+      class="form-control"
+      maxlength="1"
+      (keyup)="keyUpEvent($event, 3)"
+    />
+    <input
+      type="text"
+      appRestrictPaste
+      id="input5"
+      name="input5"
+      #formRow
+      formControlName="input5"
+      class="form-control"
+      maxlength="1"
+      (keyup)="keyUpEvent($event, 4)"
+    />
+    <input
+      id="input6"
+      appRestrictPaste
+      name="input6"
+      #formRow
+      type="text"
+      formControlName="input6"
+      class="form-control"
+      maxlength="1"
+      (keyup)="keyUpEvent($event, 5)"
+    />
+    <div class="button-row">
+      <button
+        type="submit"
+        disabled="{{ form?.status === 'INVALID' ? 'true' : 'false' }}"
+        mat-raised-button
+      >
+        Continue
+      </button>
+      <p>Wrong email? Contact November First support</p>
+    </div>
+  </form>
+</mat-card>

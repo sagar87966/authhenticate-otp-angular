@@ -1,0 +1,35 @@
+.toolbar-section {
+  background-color: aliceblue !important;
+  color: black;
+
+  span {
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 800;
+    margin-left: 21px;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  ::ng-deep .mat-form-field-appearance-fill .mat-form-field-infix {
+    font-size: 12px;
+
+    ::ng-deep .mat-select-arrow-wrapper {
+      transform: none;
+
+      .mat-form-field {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.125;
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+      }
+
+      .mat-select-arrow {
+        margin: 0px 30px;
+      }
+    }
+  }
+
+}
