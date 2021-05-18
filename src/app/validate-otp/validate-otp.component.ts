@@ -84,7 +84,8 @@ export class ValidateOtpComponent implements OnInit {
       horizontalPosition: 'center',
       verticalPosition: 'top',
     });
-    this.sharedService.hideLanding = true;
+    this.sharedService.validateRoute = true;
+    localStorage.setItem('validateRoute','1')
     this.router.navigateByUrl('/dashboard')
   }
 }

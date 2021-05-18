@@ -3,25 +3,18 @@
   <div class="toolbar" fxLayoutAlign.xs="center center" role="banner">
     <app-tool-bar></app-tool-bar>
   </div>
+
   <!-- Otp Content -->
-  <div
-    class="content"
-    fxLayoutAlign="center stretch"
-    fxFlexAlign="center"
-    *ngIf="!sharedService?.hideLanding"
-  >
+  <div class="content" fxLayoutAlign="center stretch" fxFlexAlign="center" *ngIf="!sharedService?.validateRoute">
     <app-validate-otp></app-validate-otp>
   </div>
-  <div
-    fxLayoutAlign="center stretch"
-    fxFlexAlign="center"
-    *ngIf="sharedService?.hideLanding"
-  >
+  <!-- Routing -->
+  <div fxLayoutAlign="center stretch" fxFlexAlign="center" *ngIf="sharedService?.validateRoute">
     <router-outlet></router-outlet>
   </div>
 
   <!-- Footer -->
-  <div *ngIf="!sharedService?.hideLanding" fxLayout.xs="row">
+  <div *ngIf="!sharedService?.validateRoute" fxLayout.xs="row">
     <app-footer-section></app-footer-section>
   </div>
 </div>

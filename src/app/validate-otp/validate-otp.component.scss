@@ -2,7 +2,45 @@
   background: #fff !important;
   color: #fff;
   padding: 28px;
+  .prompt {
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin-top: 16px;
+    color: #000;
 
+    strong {
+      color: #2b2a2a;
+      font-family: inherit;
+      font-weight: 500;
+    }
+
+    p:nth-child(2) {
+      margin-top: 12px;
+    }
+
+    p {
+      color: gray !important;
+      margin-bottom: 0px;
+      font-size: 10px;
+      line-height: initial;
+    }
+
+    span {
+      color: gray !important;
+      margin-top: 12px;
+      font-size: 10px;
+      display: block;
+
+      a {
+        color: green;
+        cursor: pointer;
+      }
+    }
+
+    span:last-child {
+      color: green;
+    }
+  }
   .digit-group {
     input {
       width: 30px;
@@ -43,60 +81,19 @@
       color: #e8e5e5;
       font-size: 24px;
     }
-  }
-}
+    .button-row {
+      button {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        border-radius: 50px;
+        background-color: #18e289;
+        width: 180px;
+      }
 
-.prompt {
-  margin-bottom: 20px;
-  font-size: 16px;
-  margin-top: 16px;
-  color: #000;
-
-  strong {
-    color: #2b2a2a;
-    font-family: inherit;
-    font-weight: 500;
-  }
-
-  p:nth-child(2) {
-    margin-top: 12px;
-  }
-
-  p {
-    color: gray !important;
-    margin-bottom: 0px;
-    font-size: 10px;
-    line-height: initial;
-  }
-
-  span {
-    color: gray !important;
-    margin-top: 12px;
-    font-size: 10px;
-    display: block;
-
-    a {
-      color: green;
-      cursor: pointer;
+      p {
+        font-size: 10px;
+        color: #adabab;
+      }
     }
-  }
-
-  span:last-child {
-    color: green;
-  }
-}
-
-.button-row {
-  button {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border-radius: 50px;
-    background-color: #18e289;
-    width: 180px;
-  }
-
-  p {
-    font-size: 10px;
-    color: #adabab;
   }
 }
