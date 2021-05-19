@@ -6,12 +6,12 @@
     margin-bottom: 20px;
     font-size: 16px;
     margin-top: 16px;
-    color: #000;
+    color: #373b3f;
 
     strong {
-      color: #2b2a2a;
+      color: #373b3f;
       font-family: inherit;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     p:nth-child(2) {
@@ -19,20 +19,20 @@
     }
 
     p {
-      color: gray !important;
+      color: #69747c !important;
       margin-bottom: 0px;
       font-size: 10px;
       line-height: initial;
     }
 
     span {
-      color: gray !important;
+      color: #a5acb2 !important;
       margin-top: 12px;
       font-size: 10px;
       display: block;
 
       a {
-        color: green;
+        color: #2c7384;
         cursor: pointer;
       }
     }
@@ -86,7 +86,7 @@
         margin-top: 30px;
         margin-bottom: 20px;
         border-radius: 50px;
-        background-color: #18e289;
+        background-color: #26c7a5;
         width: 180px;
       }
 
